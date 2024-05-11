@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Pramodh Ugargol
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Pramodh Ugargol} \\ \vspace{1pt}
+    \small 9108260219 $|$ \href{mailto:pramram.18@gmail.com}{\underline{pramram.18@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/pramodhugargol18}{\underline{linkedin.com}} $|$
+    \href{https://github.com/PRAMOMDHUGARGOL/}{\underline{github.com}} $|$ \href{https://portfolio-pramodh-ugargol.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+A creative technologist and a passionate developer with 3 years of experience in developing end-to-end web applications. Interested in working with a diverse and dynamic team where I can apply my skills and enhance my knowledge at the same time.
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, JavaScript, HTML, CSS} \\
+     \textbf{Frameworks}{:  React, Next.js, Node.js, Express.js, Flask, Material-UI, Bootstrap, Tailwind CSS} \\
+     \textbf{Databases}{: Firebase} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Eclipse, MATLAB} \\
+    \textbf{Libraries}{: OpenCV, pandas, NumPy, Matplotlib, Redux, Stripe.js}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer}{Aug 2021 -- Present}
+{Alltramatic}{New York, USA (Remote)}
+\resumeItemListStart
+\resumeItem{Developed scalable, robust and efficient server-side applications using  \textbf{Express.js}.}
+\resumeItem{Implemented payment processing functionality by integrating third-party \textbf{APIs} and services, such as \textbf{Stripe.js}.}
+\resumeItem{Implemented queue-based solution to manage concurrent API requests, ensuring system stability.}
+\resumeItem{Integrated \textbf{GCP} Places API and Google Sheets API for fetching address and further property details.}
+\resumeItem{Created endpoints for adding blogs with image support to \textbf{Firebase} and efficiently fetching them back.}
+\resumeItem{Ensured code stability across servers with rigorous testing, debugging, and codebase maintenance.}
+
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{Software Engineer Intern}{Mar 2021 -- Aug 2021}
+{Alltramatic}{New York, USA (Remote)}
+\resumeItemListStart
+\resumeItem{Implemented shortest path traversal function for an autonomous vehicle between two points.}
+\resumeItem{Created simulations using Tkinter to demonstrate the shortest path traversal function's performance}
+\resumeItem{Contributed to documentation and knowledge-sharing sessions within the team.}
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+   
+      \resumeProjectHeading
+          {\textbf{Lawnber} $|$ \emph{React, Node.js, Firebase, Express.js, Stripe.js}}\
+          \resumeItemListStart
+           \resumeItem{Implemented user impersonation feature using Firebase authentication and tokens, enhancing admin capabilities.}
+            \resumeItem{Created Price APIs to generate quotes and seamlessly display them in the frontend interface.}
+            \resumeItem{Integrated payment gateway to facilitate the addition, and deletion of credit cards, and processing of payments.}
+            \resumeItem{Implemented endpoints for job scheduling and professional assignment based on user location (zipcode).}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{NYU Student Rental} $|$ \emph{Next.js, Node.js, Firebase, Express.js}}\
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a fully responsive website, ensuring compatibility across all devices.}
+            \resumeItem{Developed a listings API to display available rentals and an API for the submission page handling student inquiries.}
+          
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Certifications}
+{\small
+\begin{itemize}
+\item \textbf{Introduction to Python (IEEE)}
+    {\hfill March 2021}
+    \item \textbf{Introduction to Front-End Development (Meta)} $|$ \href{https://coursera.org/share/d7e6b6db2f29dc5ccd3b8409f28c66a5} {\underline{Certificate}}
+    {\hfill March 2024}
+    \item \textbf{Programming with JavaScript (Meta)} $|$  \href{https://coursera.org/share/d7e6b6db2f29dc5ccd3b8409f28c66a5} {\underline{Certificate}}
+    {\hfill March 2024}
+    \item \textbf{Version Control (Meta)} $|$   \href{https://coursera.org/share/d7e6b6db2f29dc5ccd3b8409f28c66a5} {\underline{Certificate}}
+    {\hfill March 2024}
+\end{itemize}
+}
+
+%
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Visvesvaraya Technological University (VTU)}{Belgaum, Karnataka}
+{Bachelor of Engineering in Electronics and Communications}{Aug 2017 -- Aug 2021}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
